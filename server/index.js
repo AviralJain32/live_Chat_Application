@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 //-------------deployment---------
 const __dirname1 = path.resolve();
-if (process.env.NODE_ENV === "production") {
+if (1) {
   app.use(express.static(path.join(__dirname1, "../client/dist")));
 
   app.get("*", (req, res) =>
